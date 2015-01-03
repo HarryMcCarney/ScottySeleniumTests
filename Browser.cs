@@ -3,11 +3,9 @@ using System.Drawing.Imaging;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support.UI;
-using Protractor;
 
-namespace TestingPhanomJs
+namespace ScottySeleniumTests
 {
     class Browser
     {

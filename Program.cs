@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium.Chrome;
+using ScottySeleniumTests;
 
 namespace TestingPhanomJs
 {
@@ -6,12 +7,12 @@ namespace TestingPhanomJs
     {
         static void Main(string[] args)
         {
+            var browser = new Browser(new ChromeDriver());
+            var candidate = new CandidateSignUp(browser);
+            candidate.Create();
 
-            //var candidate = new CandidateSignUp(new Browser(new ChromeDriver()));
-            //candidate.Create();
 
-
-            var emplopyer = new EmployerSignUp(new Browser(new ChromeDriver()));
+            var emplopyer = new EmployerSignUp(browser);
             emplopyer.Create();
 
 

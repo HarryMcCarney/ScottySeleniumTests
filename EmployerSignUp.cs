@@ -1,6 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using ScottySeleniumTests;
 
 namespace TestingPhanomJs
 {
@@ -49,7 +51,9 @@ namespace TestingPhanomJs
             Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/div[1]").
             Click();
             Thread.Sleep(2000);
-            SendKeys.SendWait(@"c:\Users\Harry\Pictures\Review.png");
+            var logo = Directory.GetCurrentDirectory() + "\\Review.png";
+            Console.WriteLine(logo);
+            SendKeys.SendWait(logo);
             SendKeys.SendWait(@"{Enter}");
             
             Browser.GetElement(
