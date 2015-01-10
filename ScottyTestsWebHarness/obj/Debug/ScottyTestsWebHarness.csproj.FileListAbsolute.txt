@@ -41,3 +41,4 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Debug\ScottyTestsWebHarness.pd
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.exe.config
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.exe
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.pdb
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Deploy.ps1
