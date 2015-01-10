@@ -95,7 +95,7 @@ namespace ScottyTestsCore
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[4]/div[1]/input")
                     .SendKeys("Popov2010");
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[6]/div/label/input").Click();
-                Thread.Sleep(2000);
+                Thread.Sleep(3000);
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[3]/button").Click();
             }
             catch (Exception exp)
