@@ -43,3 +43,4 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.exe
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.pdb
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Release\ScottyTestsWebHarness.nuspec
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\ScottyTestsWebHarness.exe.config
