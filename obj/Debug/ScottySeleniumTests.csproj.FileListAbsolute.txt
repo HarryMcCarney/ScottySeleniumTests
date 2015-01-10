@@ -1,0 +1,17 @@
+C:\Scotty\SeleniumTests\bin\Debug\phantomjs-license.txt
+C:\Scotty\SeleniumTests\bin\Debug\chromedriver.exe
+C:\Scotty\SeleniumTests\bin\Debug\Review.png
+C:\Scotty\SeleniumTests\bin\Debug\ScottySeleniumTests.exe.config
+C:\Scotty\SeleniumTests\bin\Debug\ScottySeleniumTests.exe
+C:\Scotty\SeleniumTests\bin\Debug\ScottySeleniumTests.pdb
+C:\Scotty\SeleniumTests\bin\Debug\Nancy.dll
+C:\Scotty\SeleniumTests\bin\Debug\Nancy.Hosting.Self.dll
+C:\Scotty\SeleniumTests\bin\Debug\Topshelf.dll
+C:\Scotty\SeleniumTests\bin\Debug\WebDriver.dll
+C:\Scotty\SeleniumTests\bin\Debug\WebDriver.Support.dll
+C:\Scotty\SeleniumTests\bin\Debug\Nancy.xml
+C:\Scotty\SeleniumTests\bin\Debug\Nancy.Hosting.Self.xml
+C:\Scotty\SeleniumTests\bin\Debug\WebDriver.xml
+C:\Scotty\SeleniumTests\bin\Debug\WebDriver.Support.xml
+C:\Scotty\SeleniumTests\obj\Debug\ScottySeleniumTests.exe
+C:\Scotty\SeleniumTests\obj\Debug\ScottySeleniumTests.pdb
