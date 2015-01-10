@@ -1,32 +1,31 @@
-﻿using Microsoft.Owin.Hosting;
+﻿using System;
+using Nancy.Hosting.Self;
 
 namespace ScottyTestsWebHarness
 {
     internal class ScottySeleniumTestsService
     {
-        private bool InProcess { get; set; }
-    
+        private NancyHost Host { get; set; }
+
+        public ScottySeleniumTestsService()
+        {
+            var config = new HostConfiguration();
+            var urls = new UrlReservations { CreateAutomatically = true };
+            config.UrlReservations = urls;
+            var uri = new Uri("http://localhost:8887");
+            Host = new NancyHost(config, uri);
+        }
+
         public void Start()
         {
-            StartNancy(); ;
+            Host.Start();
         }
     
         public void Stop()
         {
-            InProcess = false;
+            Host.Stop();
         }
 
-        private void StartNancy()
-        {
-            string url = "http://localhost:8887";
-            using (WebApp.Start<Startup>(url))
-            {
-                InProcess = true;
-                while (InProcess)
-                {
-                
-                }
-            }
-        }
+      
     }
 }

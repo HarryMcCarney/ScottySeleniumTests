@@ -1,7 +1,6 @@
-﻿using ScottyTestsWebHarness;
-using Topshelf;
+﻿using Topshelf;
 
-[assembly: Microsoft.Owin.OwinStartup(typeof(Startup))]
+
 namespace ScottyTestsWebHarness
 {
 
