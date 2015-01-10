@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Owin.Hosting;
+﻿using Microsoft.Owin.Hosting;
 
 namespace ScottyTestsWebHarness
 {

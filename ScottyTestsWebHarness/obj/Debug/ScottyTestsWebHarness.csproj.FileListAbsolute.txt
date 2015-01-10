@@ -1,7 +1,4 @@
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\chromedriver.exe
-C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.exe.config
-C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Debug\ScottyTestsWebHarness.csprojResolveAssemblyReference.cache
-C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\phantomjs-license.txt
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Review.png
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Microsoft.Owin.Cors.dll
@@ -16,13 +13,13 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Nancy.Owin.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Nancy.ViewEngines.Razor.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Newtonsoft.Json.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Owin.dll
-C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottySeleniumTests.exe
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsCore.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\System.Web.Cors.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\System.Web.Razor.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Topshelf.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\WebDriver.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\WebDriver.Support.dll
-C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottySeleniumTests.pdb
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsCore.pdb
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Microsoft.Owin.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Microsoft.Owin.Cors.xml
@@ -38,7 +35,9 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\Newtonsoft.Json.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\System.Web.Razor.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\WebDriver.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\WebDriver.Support.xml
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Debug\ScottyTestsWebHarness.csprojResolveAssemblyReference.cache
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Debug\ScottyTestsWebHarness.exe
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Debug\ScottyTestsWebHarness.pdb
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.exe.config
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.exe
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ScottyTestsWebHarness.pdb

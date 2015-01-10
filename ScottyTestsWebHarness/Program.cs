@@ -1,5 +1,4 @@
-﻿using System;
-using ScottyTestsWebHarness;
+﻿using ScottyTestsWebHarness;
 using Topshelf;
 
 [assembly: Microsoft.Owin.OwinStartup(typeof(Startup))]

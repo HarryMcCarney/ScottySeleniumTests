@@ -1,0 +1,10 @@
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\chromedriver.exe
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\Review.png
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\ScottyTestsCore.dll
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\ScottyTestsCore.pdb
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.dll
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.Support.dll
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.xml
+C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.Support.xml
+C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.dll
+C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.pdb

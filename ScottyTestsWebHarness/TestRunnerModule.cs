@@ -3,8 +3,8 @@ using System.Threading;
 using Nancy;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Chrome;
-using ScottySeleniumTests;
-using TestingPhanomJs;
+using ScottyTestsCore;
+
 
 namespace ScottyTestsWebHarness
 {
