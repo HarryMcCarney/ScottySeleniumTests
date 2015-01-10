@@ -4,16 +4,19 @@ using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+using ScottyTestsWebHarness;
 
 namespace ScottySeleniumTests
 {
-    class Browser
+    public class Browser
     {
         private ChromeDriver Driver { get; set; }
+        public TestRunResult Results { get; set; }
 
-        public Browser(ChromeDriver  driver)
+        public Browser(ChromeDriver  driver, TestRunResult results)
         {
             Driver = driver;
+            Results = results;
             Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(15));
             Navigate("http://scotty-dev.s3-website-eu-west-1.amazonaws.com/");
         }
@@ -24,20 +27,36 @@ namespace ScottySeleniumTests
         }
 
 
-        public IWebElement GetElement(string path)
+        public void Close()
         {
+            foreach (var handle in Driver.WindowHandles)
+            {
+                Driver.SwitchTo().Window(handle);
+                Driver.Close();
+            }
+        }
+
+        public IWebElement GetElement(string path, int? retries = null)
+        {
+            if (retries == null)
+                retries = 3;
             try
             {
-            
+                
                 var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
                 wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(path)));
                 return Driver.FindElementByXPath(path);
             }
             catch (Exception exp)
             {
-                Driver.GetScreenshot().SaveAsFile("screenshot"+DateTime.Now.Ticks.ToString()+".png", ImageFormat.Png);
-                Thread.Sleep(5000);
-                return GetElement(path);
+                retries = retries - 1;
+                //Driver.GetScreenshot().SaveAsFile("screenshot"+DateTime.Now.Ticks.ToString()+".png", ImageFormat.Png);
+                if (retries > 0)
+                {
+                    Thread.Sleep(5000);
+                    return GetElement(path, retries);
+                }
+                throw exp;
             }
          }
 
