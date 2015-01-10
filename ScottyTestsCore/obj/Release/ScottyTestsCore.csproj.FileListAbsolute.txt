@@ -8,3 +8,4 @@ C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Release\WebDriver.xml
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Release\WebDriver.Support.xml
 C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Release\ScottyTestsCore.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Release\ScottyTestsCore.pdb
+C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Release\ScottyTestsCore.csprojResolveAssemblyReference.cache

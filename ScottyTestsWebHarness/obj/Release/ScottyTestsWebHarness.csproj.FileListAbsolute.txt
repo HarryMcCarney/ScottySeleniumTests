@@ -42,3 +42,4 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Release\WebDriver.Support.xml
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.csprojResolveAssemblyReference.cache
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.exe
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\obj\Release\ScottyTestsWebHarness.pdb
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Release\ScottyTestsWebHarness.nuspec

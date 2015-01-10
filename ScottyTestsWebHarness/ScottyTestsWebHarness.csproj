@@ -117,11 +117,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Deploy.ps1">
+    <Content Include="Deploy.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Scotty.SeleniumTests.nuspec" />
+    </Content>
     <None Include="packages.config" />
+    <Content Include="ScottyTestsWebHarness.nuspec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
