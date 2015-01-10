@@ -1,4 +1,4 @@
-﻿$cmd = "$OctopusPackageDirectoryPath" + "\bin\Release\ScottyTestsWebHarness.exe"
+﻿$cmd = "$OctopusPackageDirectoryPath" + "ScottyTestsWebHarness.exe"
 
 & $cmd "stop"
 & $cmd "uninstall"
