@@ -79,6 +79,7 @@ namespace ScottyTestsCore
                 Browser.GetElement("//*[@id=\"session_key-oauth2SAuthorizeForm\"]").SendKeys("hmccarney@gmail.com");
                 Browser.GetElement("//*[@id=\"session_password-oauth2SAuthorizeForm\"]").SendKeys("Popov2010");
                 Browser.GetElement("//*[@id=\"body\"]/div/form/div[2]/ul/li[1]/input").Click();
+                Thread.Sleep(4000);
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[1]/div[1]/input")
                     .Clear();
