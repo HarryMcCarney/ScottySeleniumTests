@@ -23,11 +23,11 @@ namespace ScottyTestsWebHarness
             return JsonConvert.SerializeObject(TestRunResults.Instance.GetRun(Request.Query.Id));
         }
 
-        private dynamic Start()
+        private string Start()
         {
             RunId = TestRunResults.Instance.CreateRun();
             new Thread(RunTests).Start();
-            return RunId;
+            return JsonConvert.SerializeObject(TestRunResults.Instance.GetRun(RunId)); ;
         }
 
         private void RunTests()

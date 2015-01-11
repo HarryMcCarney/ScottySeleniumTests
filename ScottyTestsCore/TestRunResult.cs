@@ -49,6 +49,10 @@ namespace ScottyTestsCore
         public string Message { get; set; }
         public RunStatus RunStatus { get; set; }
         public string Id { get; set; }
+        public string Status {
+            get { return Enum.GetName(typeof(RunStatus), RunStatus); }
+            
+        }
     }
 
 
