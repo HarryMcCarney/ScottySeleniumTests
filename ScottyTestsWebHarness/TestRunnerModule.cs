@@ -41,7 +41,7 @@ namespace ScottyTestsWebHarness
                 var emplopyer = new EmployerSignUp(browser);
                 emplopyer.Create();
                 browser.Close();
-                TestRunResults.Instance.SetRun(RunId, null, RunStatus.Sucess);
+                TestRunResults.Instance.SetRun(RunId, null, RunStatus.Success);
             }
             catch (Exception exp)
             {

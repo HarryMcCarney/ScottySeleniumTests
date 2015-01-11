@@ -61,7 +61,7 @@ namespace ScottyTestsCore
         Pending,
         Running,
         Failed,
-        Sucess
+        Success
     }
 }
 
