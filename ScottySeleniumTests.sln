@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScottyTestsWebHarness", "Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScottyTestsCore", "ScottyTestsCore\ScottyTestsCore.csproj", "{D8E86238-226E-4AE3-8AF8-C6B0BEA93D4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScottyTestsTests", "ScottyTestsTests\ScottyTestsTests.csproj", "{DDCF4F93-9ECB-4175-B9D5-4C444FC5A52E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{D8E86238-226E-4AE3-8AF8-C6B0BEA93D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E86238-226E-4AE3-8AF8-C6B0BEA93D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E86238-226E-4AE3-8AF8-C6B0BEA93D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDCF4F93-9ECB-4175-B9D5-4C444FC5A52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCF4F93-9ECB-4175-B9D5-4C444FC5A52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCF4F93-9ECB-4175-B9D5-4C444FC5A52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCF4F93-9ECB-4175-B9D5-4C444FC5A52E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

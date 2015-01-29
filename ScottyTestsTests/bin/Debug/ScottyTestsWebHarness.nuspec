@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Scotty.SeleniumTests</id>
+    <version>$version$</version>
+    <title>Scotty.SeleniumTests</title>
+    <authors>Harry McCarney</authors>
+    <owners>Harry McCarney</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Scotty.SeleniumTests</description>
+    <releaseNotes>Scotty.SeleniumTests</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Scotty.SeleniumTests</tags>
+  </metadata>
+</package>

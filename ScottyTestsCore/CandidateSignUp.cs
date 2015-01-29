@@ -25,7 +25,7 @@ namespace ScottyTestsCore
             Languages();
             FinalStep();
             ConfirmEmail();
-            //Login();
+            Login();
 
         }
 
@@ -33,32 +33,32 @@ namespace ScottyTestsCore
         {
             try
             {
+               
                 Browser.GetElement("//*[@id=\"content\"]/div[3]/div[2]/a").Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[1]/div/select[1]/option[3]")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div/select[1]/option[3]")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[2]/div[2]/div/div[1]/label/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[1]/label/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[2]/div[2]/div/div[10]/label/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div[2]/div/div[4]/label/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[3]/div/hc-label-typeahead/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[3]/div[1]/hc-label-typeahead/input")
                     .SendKeys("Selenium");
                 Browser.GetElement(
-                    " //*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[4]/div[2]/div/input")
+                    " //*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[4]/div[2]/div/input")
                     .SendKeys("50000");
-                Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/label/input")
+                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[5]/div[2]/div[2]/div[1]/div[1]/label/input")
                     .
                     Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-target-position-form/form/div[2]/div/div/div/button")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[2]/div/div/button")
                     .Click();
                 Thread.Sleep(2000);
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div/hc-linkedin-connect/div[2]")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/hc-connectors-buttons/div/div/hc-linkedin-connect/div[2]")
                     .Click();
 
             }
@@ -81,23 +81,23 @@ namespace ScottyTestsCore
                 Browser.GetElement("//*[@id=\"body\"]/div/form/div[2]/ul/li[1]/input").Click();
                 Thread.Sleep(4000);
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[1]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[2]/div[1]/input")
                     .Clear();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[1]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[2]/div[1]/input")
                     .SendKeys("Selenium");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[3]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[3]/div[1]/input")
                     .Clear();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[3]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[3]/div[1]/input")
                     .SendKeys(Email);
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[4]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[4]/div[1]/input")
                     .SendKeys("Popov2010");
-                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/div[6]/div/label/input").Click();
+                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[1]/div[6]/div/label/input").Click();
                 Thread.Sleep(3000);
-                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[3]/button").Click();
+                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/form/div/div[2]/button").Click();
             }
             catch (Exception exp)
             {
@@ -113,51 +113,40 @@ namespace ScottyTestsCore
             try
             {
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li/div/div[5]/div/div[4]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[5]/div/div[4]/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li/div/div[6]/div/div[4]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[6]/div/div[4]/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li/div/div[16]/button")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[16]/button")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[1]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[1]/div[1]/input")
                     .SendKeys("Selennium LTD");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[2]/div/div/div[2]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[2]/div/div/div[2]/input")
                     .SendKeys("Berlin");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[1]/div[1]/div[1]/select[1]/option[4]")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[1]/div[1]/div[1]/select[1]/option[3]")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/input")
                     .SendKeys("2002");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[2]/div[4]/div/label/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[2]/div[4]/div/label/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[4]/div/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[4]/div/input")
                     .SendKeys("Chief Boulder Roller");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[5]/div/textarea")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[5]/div/textarea")
                     .SendKeys("I was responsible for boulder rolling");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[2]/div/div[2]/div[1]/div[1]/label/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[2]/div/div[2]/div[1]/div[1]/label/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[2]/div/div[2]/div[1]/div[8]/label/input")
-                    .Click();
-                Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[2]/div/div[2]/div[2]/hc-label-typeahead/input")
-                    .SendKeys("Selenium");
-                Thread.Sleep(2000);
-                Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[1]/div[3]/div/div/div[1]/div[1]/div[1]/select")
-                    .
-                    Click();
-                Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-experience/div/ul/li[2]/hc-experience-form/form/div/div[3]/div/div/div/button[1]")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[3]/div/div/button[1]")
                     .
                     Click();
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/div/button").
@@ -177,10 +166,10 @@ namespace ScottyTestsCore
             try
             {
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-education/div/ul/li/div/div[5]/div/div[4]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[5]/div/div[4]/input")
                     .Click();
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-education/div/ul/li/div/div[6]/div/div[4]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[6]/div/div[4]/input")
                     .Click();
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/div/button")
                     .Click();
@@ -211,7 +200,7 @@ namespace ScottyTestsCore
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-skills-form/form/div[1]/div/div[4]/div/div/div[1]/input")
                     .SendKeys("Selenium");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-skills-form/form/div[1]/div/div[4]/div/div/div[2]/select[1]/option[4]")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-skills-form/form/div[1]/div/div[4]/div/div/div[2]/select[1]/option[2]")
                     .Click();
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-skills-form/form/div[2]/div/button")
@@ -257,17 +246,17 @@ namespace ScottyTestsCore
             try
             {
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-profile-form/form/div[1]/div[1]/div[1]/input")
+                    "//*[@id=\"content\"]//ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/input")
                     .SendKeys("Berlin");
                 Thread.Sleep(2000);
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-profile-form/form/div[1]/div[1]/div[1]/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/input")
                     .SendKeys(", DE");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-profile-form/form/div[1]/div[2]/div/input")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/input")
                     .SendKeys("06071979");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-profile-form/form/div[2]/div/button")
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[2]/div/button")
                     .
                     Click();
             }
@@ -282,7 +271,7 @@ namespace ScottyTestsCore
 
 
         private void ConfirmEmail()
-        {
+        {   
             try
             {
                 Browser.Navigate("https://mail.google.com/");

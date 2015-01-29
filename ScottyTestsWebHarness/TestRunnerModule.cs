@@ -26,7 +26,7 @@ namespace ScottyTestsWebHarness
         private string Start()
         {
             RunId = TestRunResults.Instance.CreateRun();
-            new Thread(RunTests).Start();
+            RunTests();
             return JsonConvert.SerializeObject(TestRunResults.Instance.GetRun(RunId)); ;
         }
 
@@ -38,8 +38,8 @@ namespace ScottyTestsWebHarness
                 TestRunResults.Instance.SetRun(RunId,null, RunStatus.Running);
                 var candidate = new CandidateSignUp(browser);
                 candidate.Create();
-                var emplopyer = new EmployerSignUp(browser);
-                emplopyer.Create();
+                //var emplopyer = new EmployerSignUp(browser);
+                //emplopyer.Create();
                 browser.Close();
                 TestRunResults.Instance.SetRun(RunId, null, RunStatus.Success);
             }
