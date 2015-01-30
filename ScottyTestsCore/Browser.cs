@@ -58,16 +58,17 @@ namespace ScottyTestsCore
                     Thread.Sleep(5000);
                     return GetElement(path, retries);
                 }
-                var screenshot = "screenshot" + DateTime.Now.Ticks.ToString() + ".png";
+               
                 
-                Driver.GetScreenshot().SaveAsFile(screenshot, ImageFormat.Png);
-                UploadScreenShot(screenshot);
                 throw exp;
             }
          }
 
-        private void UploadScreenShot(string screenshot)
+        public void UploadScreenShot()
         {
+            var screenshot = "screenshot" + DateTime.Now.Ticks.ToString() + ".png";
+
+            Driver.GetScreenshot().SaveAsFile(screenshot, ImageFormat.Png);
             var storageAccount = CloudStorageAccount.Parse(@"DefaultEndpointsProtocol=https;AccountName=booksys;AccountKey=BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==");
             var blobClient = storageAccount.CreateCloudBlobClient();
             var container = blobClient.GetContainerReference("scottyseleniumscreenshots");

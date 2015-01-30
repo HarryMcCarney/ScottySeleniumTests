@@ -66,7 +66,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
 
@@ -103,7 +104,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
@@ -157,7 +159,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
@@ -179,7 +182,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
@@ -211,7 +215,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+            
 
             }
         }
@@ -237,7 +242,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+               
 
             }
         }
@@ -265,7 +271,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
@@ -290,7 +297,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
@@ -317,7 +325,8 @@ namespace ScottyTestsCore
             {
                 Browser.Results.RunStatus = RunStatus.Failed;
                 Browser.Results.Message = exp.Message;
-                throw;
+                Browser.UploadScreenShot();
+                
 
             }
         }
