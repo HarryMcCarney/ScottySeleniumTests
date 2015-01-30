@@ -53,6 +53,8 @@ namespace ScottyTestsCore
             get { return Enum.GetName(typeof(RunStatus), RunStatus); }
             
         }
+
+        public string ScreenShotUrl { get; set; }
     }
 
 

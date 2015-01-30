@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Configuration;
 using System.Drawing.Imaging;
 using System.Threading;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -49,15 +52,39 @@ namespace ScottyTestsCore
             catch (Exception exp)
             {
                 retries = retries - 1;
-                //Driver.GetScreenshot().SaveAsFile("screenshot"+DateTime.Now.Ticks.ToString()+".png", ImageFormat.Png);
+                
                 if (retries > 0)
                 {
                     Thread.Sleep(5000);
                     return GetElement(path, retries);
                 }
+                var screenshot = "screenshot" + DateTime.Now.Ticks.ToString() + ".png";
+                
+                Driver.GetScreenshot().SaveAsFile(screenshot, ImageFormat.Png);
+                UploadScreenShot(screenshot);
                 throw exp;
             }
          }
+
+        private void UploadScreenShot(string screenshot)
+        {
+            var storageAccount = CloudStorageAccount.Parse(@"DefaultEndpointsProtocol=https;AccountName=booksys;AccountKey=BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==");
+            var blobClient = storageAccount.CreateCloudBlobClient();
+            var container = blobClient.GetContainerReference("scottyseleniumscreenshots");
+            container.CreateIfNotExists();
+            container.SetPermissions(
+            new BlobContainerPermissions
+            {
+                PublicAccess = BlobContainerPublicAccessType.Blob
+            });
+            var blockBlob = container.GetBlockBlobReference(screenshot);
+           
+            using (var fileStream = System.IO.File.OpenRead(screenshot))
+            {
+                blockBlob.UploadFromStream(fileStream);
+            }
+            Results.ScreenShotUrl = "https://booksys.blob.core.windows.net/scottyseleniumscreenshots/" + screenshot;
+        }
 
         public IWebElement GetElementCSS(string path)
         {

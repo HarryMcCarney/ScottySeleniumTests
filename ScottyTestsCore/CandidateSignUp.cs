@@ -149,7 +149,7 @@ namespace ScottyTestsCore
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li[2]/hc-experience-form/form/div/div[3]/div/div/button[1]")
                     .
                     Click();
-                Thread.Sleep(2000);
+                Thread.Sleep(4000);
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/div/button").
                     Click();
             }

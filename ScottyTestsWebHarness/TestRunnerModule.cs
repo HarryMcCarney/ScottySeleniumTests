@@ -26,7 +26,7 @@ namespace ScottyTestsWebHarness
         private string Start()
         {
             RunId = TestRunResults.Instance.CreateRun();
-            RunTests();
+            new Thread(RunTests).Start();
             return JsonConvert.SerializeObject(TestRunResults.Instance.GetRun(RunId)); ;
         }
 

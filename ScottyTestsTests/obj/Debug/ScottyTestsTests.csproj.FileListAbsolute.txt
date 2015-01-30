@@ -28,3 +28,7 @@ C:\Scotty\SeleniumTests\ScottyTestsTests\bin\Debug\WebDriver.Support.xml
 C:\Scotty\SeleniumTests\ScottyTestsTests\obj\Debug\ScottyTestsTests.csprojResolveAssemblyReference.cache
 C:\Scotty\SeleniumTests\ScottyTestsTests\obj\Debug\ScottyTestsTests.dll
 C:\Scotty\SeleniumTests\ScottyTestsTests\obj\Debug\ScottyTestsTests.pdb
+C:\Scotty\SeleniumTests\ScottyTestsTests\bin\Debug\profilePicture.jpg
+C:\Scotty\SeleniumTests\ScottyTestsTests\bin\Debug\ScottyTestsTests.dll.config
+C:\Scotty\SeleniumTests\ScottyTestsTests\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Scotty\SeleniumTests\ScottyTestsTests\bin\Debug\Microsoft.WindowsAzure.Storage.xml
