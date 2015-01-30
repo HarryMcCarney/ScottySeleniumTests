@@ -25,7 +25,7 @@ namespace ScottyTestsCore
             Languages();
             FinalStep();
             ConfirmEmail();
-            Login();
+            //Login();
 
         }
 
@@ -169,6 +169,7 @@ namespace ScottyTestsCore
         {
             try
             {
+                Thread.Sleep(2000);
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/ul/li/div/div[5]/div/div[4]/input")
                     .Click();
@@ -194,6 +195,7 @@ namespace ScottyTestsCore
         {
             try
             {
+                Thread.Sleep(2000);
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-skills-form/form/div[1]/div/div[2]/div/div/div[2]/select[1]/option[2]")
                     .Click();
@@ -225,6 +227,7 @@ namespace ScottyTestsCore
         {
             try
             {
+                Thread.Sleep(2000);
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/hc-languages-form/form/div[1]/div[1]/div/div[1]/div/div[2]/select[1]/option[2]")
                     .Click();
@@ -252,6 +255,7 @@ namespace ScottyTestsCore
         {
             try
             {
+                Thread.Sleep(2000);
                 Browser.GetElement(
                     "//*[@id=\"content\"]//ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/input")
                     .SendKeys("Berlin");
@@ -282,6 +286,7 @@ namespace ScottyTestsCore
         {   
             try
             {
+                Thread.Sleep(2000);
                 Browser.Navigate("https://mail.google.com/");
                 Browser.GetElement("//*[@id=\"Email\"]").SendKeys("catch@hackandcraft.com");
                 Browser.GetElement("//*[@id=\"Passwd\"]").SendKeys("Popov2010");

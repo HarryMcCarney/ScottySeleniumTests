@@ -8,7 +8,6 @@ C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.xml
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\WebDriver.Support.xml
 C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.pdb
-C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.csprojResolveAssemblyReference.cache
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\Microsoft.Data.Edm.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\Microsoft.Data.OData.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\Microsoft.Data.Services.Client.dll
