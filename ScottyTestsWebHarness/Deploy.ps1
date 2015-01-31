@@ -1,2 +1,5 @@
-﻿& "Get-Process ScottyTestsWebHarness | Stop-Process"
-& "Start-Process -FilePath" + "$OctopusPackageDirectoryPath" + "\bin\ScottyTestsWebHarness.exe"
+﻿$cmd = "$OctopusPackageDirectoryPath" + "\bin\ScottyTestsWebHarness.exe"
+& "Get-Process ScottyTestsWebHarness | Stop-Process"
+& "Start-Process -FilePath" $cmd
+
+
