@@ -2,6 +2,7 @@
 using System.Threading;
 using Nancy;
 using Newtonsoft.Json;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using ScottyTestsCore;
 
@@ -32,14 +33,19 @@ namespace ScottyTestsWebHarness
 
         private void RunTests()
         {
-            var browser = new Browser(new ChromeDriver(), TestRunResults.Instance.GetRun(RunId));
+            BrowserRun(new ChromeDriver(), TestRunResults.Instance.GetRun(RunId));
+        }
+
+        private void BrowserRun(IWebDriver driver, TestRunResult result )
+        {
+            var browser = new Browser(driver, result);
             try
             {
-                TestRunResults.Instance.SetRun(RunId,null, RunStatus.Running);
+                TestRunResults.Instance.SetRun(RunId, null, RunStatus.Running);
                 var candidate = new CandidateSignUp(browser);
                 candidate.Create();
-                //var emplopyer = new EmployerSignUp(browser);
-                //emplopyer.Create();
+                var emplopyer = new EmployerSignUp(browser);
+                emplopyer.Create();
                 browser.Close();
                 TestRunResults.Instance.SetRun(RunId, null, RunStatus.Success);
             }

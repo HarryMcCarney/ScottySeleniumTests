@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Configuration;
 using System.Drawing.Imaging;
 using System.Threading;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
 namespace ScottyTestsCore
 {
     public class Browser
     {
-        private ChromeDriver Driver { get; set; }
+        private IWebDriver Driver { get; set; }
         public TestRunResult Results { get; set; }
 
-        public Browser(ChromeDriver  driver, TestRunResult results)
+        public Browser(IWebDriver driver, TestRunResult results)
         {
             Driver = driver;
             Results = results;
@@ -47,7 +45,7 @@ namespace ScottyTestsCore
                 
                 var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
                 wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(path)));
-                return Driver.FindElementByXPath(path);
+                return Driver.FindElement(By.XPath(path));
             }
             catch (Exception exp)
             {
@@ -66,9 +64,9 @@ namespace ScottyTestsCore
 
         public void UploadScreenShot()
         {
-            var screenshot = "screenshot" + DateTime.Now.Ticks.ToString() + ".png";
-
-            Driver.GetScreenshot().SaveAsFile(screenshot, ImageFormat.Png);
+            var imagefile = "screenshot" + DateTime.Now.Ticks.ToString() + ".png";
+            var screenshot = ((ITakesScreenshot) Driver).GetScreenshot();
+            screenshot.SaveAsFile(imagefile, ImageFormat.Png);
             var storageAccount = CloudStorageAccount.Parse(@"DefaultEndpointsProtocol=https;AccountName=booksys;AccountKey=BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==");
             var blobClient = storageAccount.CreateCloudBlobClient();
             var container = blobClient.GetContainerReference("scottyseleniumscreenshots");
@@ -78,13 +76,13 @@ namespace ScottyTestsCore
             {
                 PublicAccess = BlobContainerPublicAccessType.Blob
             });
-            var blockBlob = container.GetBlockBlobReference(screenshot);
-           
-            using (var fileStream = System.IO.File.OpenRead(screenshot))
+            var blockBlob = container.GetBlockBlobReference(imagefile);
+
+            using (var fileStream = System.IO.File.OpenRead(imagefile))
             {
                 blockBlob.UploadFromStream(fileStream);
             }
-            Results.ScreenShotUrl = "https://booksys.blob.core.windows.net/scottyseleniumscreenshots/" + screenshot;
+            Results.ScreenShotUrl = "https://booksys.blob.core.windows.net/scottyseleniumscreenshots/" + imagefile;
         }
 
         public IWebElement GetElementCSS(string path)
@@ -96,11 +94,10 @@ namespace ScottyTestsCore
                 wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(path)));
                 
 
-                return Driver.FindElementByCssSelector(path);
+                return Driver.FindElement(By.CssSelector(path));
             }
             catch (Exception exp)
             {
-                Driver.GetScreenshot().SaveAsFile("screenshot" + DateTime.Now.Ticks.ToString() + ".png", ImageFormat.Png);
                 Thread.Sleep(5000);
                 return GetElementCSS(path);
             }

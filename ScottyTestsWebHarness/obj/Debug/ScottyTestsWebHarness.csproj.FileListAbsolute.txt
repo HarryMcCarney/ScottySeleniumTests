@@ -67,3 +67,4 @@ C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ko\System.Spatial.resour
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\ru\System.Spatial.resources.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\zh-Hans\System.Spatial.resources.dll
 C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Scotty\SeleniumTests\ScottyTestsWebHarness\bin\Debug\IEDriverServer.exe

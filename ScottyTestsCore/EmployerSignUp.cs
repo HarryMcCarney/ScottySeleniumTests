@@ -176,7 +176,8 @@ namespace ScottyTestsCore
             try
             {
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/form/div[1]/div/div[1]/hc-benefits-edit/ul/li[1]/label/input").Click();
-                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/form/div[1]/div/div[1]/hc-benefits-edit/ul/li[19]/label/input").Click();
+                Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/form/div[1]/div/div[1]/hc-benefits-edit/ul/li[15]/label/input").Click();
+              
                 SendKeys.SendWait(@"{Tab} Boulder polishing");
                 SendKeys.SendWait(@"{Tab} We do several boulder rolling tests during the interview");
                 Browser.GetElement("//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/form/div[1]/div/div[2]/button").Click();
