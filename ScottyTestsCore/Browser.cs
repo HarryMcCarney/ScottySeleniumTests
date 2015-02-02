@@ -27,6 +27,23 @@ namespace ScottyTestsCore
         }
 
 
+        public void CloseOtherTab()
+        {
+            var currentHandle = Driver.CurrentWindowHandle;
+            foreach (var handle in Driver.WindowHandles)
+            {
+                if (handle != currentHandle)
+                {
+                    Driver.SwitchTo().Window(handle);
+                    Driver.Close();
+                    Driver.SwitchTo().Window(currentHandle);
+                }
+                
+            }
+         
+        }
+
+
         public void Close()
         {
             foreach (var handle in Driver.WindowHandles)

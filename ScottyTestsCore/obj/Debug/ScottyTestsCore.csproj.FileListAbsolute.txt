@@ -58,5 +58,4 @@ C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\ru\System.Spatial.resources.dl
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\zh-Hans\System.Spatial.resources.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\zh-Hant\System.Spatial.resources.dll
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\ScottyTestsCore.dll.config
-C:\Scotty\SeleniumTests\ScottyTestsCore\obj\Debug\ScottyTestsCore.csprojResolveAssemblyReference.cache
 C:\Scotty\SeleniumTests\ScottyTestsCore\bin\Debug\IEDriverServer.exe
