@@ -1,9 +1,5 @@
 ﻿$cmd = "$OctopusPackageDirectoryPath" + "\bin\ScottyTestsWebHarness.exe"
-
-& $cmd "stop"
-& $cmd "uninstall"
-& $cmd "install"
-& $cmd "start"
-
+& "Get-Process ScottyTestsWebHarness | Stop-Process"
+& "Start-Process -FilePath" $cmd
 
 
