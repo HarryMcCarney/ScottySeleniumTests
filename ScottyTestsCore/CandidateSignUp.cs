@@ -294,7 +294,7 @@ namespace ScottyTestsCore
 
 
                 Browser.GetElement("//div [@class='y6']/span[contains(.,'Please confirm your registration')]").Click();
-
+                Thread.Sleep(3000);
                 Browser.GetElementCSS("a[href*='scotty-dev.s3-website-eu-west-1.amazonaws.com']").Click();
 
             }
