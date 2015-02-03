@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Windows.Forms;
 
 
 namespace ScottyTestsCore
@@ -263,6 +264,8 @@ namespace ScottyTestsCore
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/input")
                     .SendKeys(", DE");
+                Thread.Sleep(2000);
+                SendKeys.SendWait(@"{Enter}");
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/div[1]/div[1]/input")
                     .SendKeys("06");
