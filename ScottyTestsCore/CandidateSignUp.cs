@@ -264,8 +264,17 @@ namespace ScottyTestsCore
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[1]/div[1]/input")
                     .SendKeys(", DE");
                 Browser.GetElement(
-                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/input")
-                    .SendKeys("06071979");
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/div[1]/div[1]/input")
+                    .SendKeys("06");
+
+                Browser.GetElement(
+                    "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/div[1]/div[2]/select[1]/option[4]")
+                    .Click();
+                Browser.GetElement(
+                   "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[1]/div[2]/div/div[1]/div[3]/input")
+                   .SendKeys("1979");
+
+
                 Browser.GetElement(
                     "//*[@id=\"content\"]/ui-view/div/div[2]/ui-view/div/div[1]/div/form/div[2]/div/button")
                     .
